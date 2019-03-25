@@ -1,0 +1,130 @@
+
+.container{
+    width: 535px;
+    height: 360px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    margin: 30px auto;
+}
+
+/**
+    outline: none;
+    user-select: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    z-index: auto;
+    position: relative;
+    line-height: 1.2em;
+    transition: none 0s ease 0s;
+    background: transparent !important;
+*/
+.input {
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    top:calc(50% - 50px);
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.btns {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+.btns > button, .styleBtn , .closeBtn, .openBtn{
+    font-size: 0;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+    cursor: pointer;
+    height: 20px;
+    margin: 4px;
+    width: 20px;
+    outline: none;
+    border: none;
+}
+
+.closeBtn, .openBtn {
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: transparent url('../images/arrowLeft.png') center center;
+}
+
+.openBtn {
+    background: transparent url('../images/onhide.png');
+    background-size: 22px;
+    background-position: center center;
+}
+
+.red {
+    background-color: #fb6255;
+}
+
+.yellow {
+    background-color: #f6c512;
+}
+
+.purple, button[data-id="1"] {
+    background-color: #c03dff;
+}
+
+
+.cyan, button[data-id="2"] {
+    background-color: #378ed4;
+}
+
+button[data-id="3"] {
+    background-image: url('../images/ballon-s.jpg');
+}
+
+.ballons{
+    background: repeat url('../images/ballons.jpg');
+}
+
+button[data-id="4"] {
+    background-image: url('../images/clouds-s.jpg');
+}
+
+.clouds {
+    background: repeat url('../images/clouds.jpg');
+}
+
+button[data-id="5"] {
+    background-image: url('../images/thumbs-s.jpg');
+}
+
+.thumbs {
+    background: repeat url('../images/thumbs.jpg');
+}
+
+button[data-id="6"] {
+    background-image: url('../images/smile-s.jpg');
+}
+
+.smile {
+    background: repeat url('../images/smile.jpg');
+}
+
+.default{
+    background-color: #3f7ce2;
+}
