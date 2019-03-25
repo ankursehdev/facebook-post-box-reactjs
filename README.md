@@ -1,6 +1,6 @@
 # facebook-post-box-reactjs
 
-![Facebook Status Post Message Box Gif](./public/images/facebook-post.gif "Facebook Status Post Message Box Gif")
+![Facebook Status Post Message Box Gif](public/resources/images/facebook-post.gif "Facebook Status Post Message Box Gif")
 
 ## nano-react-app-template
 
