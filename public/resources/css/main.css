@@ -1,13 +1,18 @@
 
+body {
+    background: #ffedeb;
+}
 .container{
     width: 535px;
     height: 360px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     transition: all 0.2s ease-in-out;
     position: relative;
     margin: 30px auto;
+    box-shadow: 0px 0px 27px 4px rgb(247, 168, 166);
+    -webkit-box-shadow: 0px 0px 27px 4px rgb(247, 168, 166);;
+    -moz-box-shadow: 0px 0px 27px 4px rgb(247, 168, 166);;
 }
 
 /**
@@ -39,7 +44,23 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.5);;
+}
 
+:-ms-input-placeholder { /* IE 10+ */
+color: rgba(255, 255, 255, 0.5);;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+color: rgba(255, 255, 255, 0.5);;
+}
+
+.active {
+    box-shadow: inset 0 0 0 2px #FFFFFF, 0 0 4px 0 rgba(0, 0, 0, .3) !important;
+    -webkit-box-shadow: inset 0 0 0 2px #FFFFFF, 0 0 4px 0 rgba(0, 0, 0, .3) !important;
+    -moz-box-shadow: inset 0 0 0 2px #FFFFFF, 0 0 4px 0 rgba(0, 0, 0, .3) !important;
+}
 
 .btns {
     position: absolute;
@@ -54,6 +75,8 @@
     background-size: cover;
     border-radius: 4px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
     cursor: pointer;
     height: 20px;
     margin: 4px;

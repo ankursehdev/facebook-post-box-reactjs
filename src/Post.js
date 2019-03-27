@@ -7,7 +7,14 @@ class Post extends React.Component {
         this.state = {
             selectedClass: 'red',
             displayBtns: true,
-            buttons: [1,2,3,4,5,6]
+            buttons:[
+                {id: 1, buttonName: 'purple'},
+                {id: 2, buttonName: 'cyan'},
+                {id: 3, buttonName: 'ballons'},
+                {id: 4, buttonName: 'clouds'},
+                {id: 5, buttonName: 'thumbs'},
+                {id: 6, buttonName: 'smile'},
+              ]
         }
     }
     
@@ -50,11 +57,12 @@ class Post extends React.Component {
                 <button className={this.state.displayBtns ? 'closeBtn' : 'openBtn'} onClick={this.handleDisplayBtnClick}>&nbsp;</button>
                 
                 { this.state.displayBtns ? 
-                    <div className="btns" >
+                    <div className="btns">
                         {this.state.buttons.map(eachButtonNumber => 
                             <button 
-                                key={eachButtonNumber} 
-                                data-id={eachButtonNumber} 
+                                key={eachButtonNumber.id} 
+                                className={this.state.selectedClass === eachButtonNumber.buttonName ? 'active' : null}
+                                data-id={eachButtonNumber.id} 
                                 onClick={this.handleChange}
                             >&nbsp;</button>
                         )}
